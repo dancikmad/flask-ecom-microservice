@@ -61,6 +61,8 @@ def get_products(current_user_id):
 with open('users.json', 'r') as f:
     users = json.load(f)
     print(users)
+
+
 @app.route('/auth', methods=['POST'])
 def authenticate_user():
     """ An API endpoint for user authentication """
